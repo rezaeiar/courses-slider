@@ -1,0 +1,94 @@
+$primary_color: #1e57c2;
+$secondry_color: #969696;
+$third_color: #272727;
+$bg_color: #dbebff;
+
+.slider {
+    margin: 80px 0;
+    overflow: hidden;
+
+    .slider-wrapper {
+        display: flex;
+        overflow: hidden;
+        gap: 28px;
+
+        .content {
+            width: 14rem;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex-shrink: 0;
+            z-index: 10;
+            background-color: $bg_color;
+
+            .title {
+                font-size: 4rem;
+                color: $primary_color;
+                margin: 0;
+            }
+
+            .text {
+                color: $secondry_color;
+            }
+
+            .link {
+                display: flex;
+                color: $primary_color;
+                text-decoration: none;
+                font-size: 20px;
+            }
+
+            .slider-btns {
+                display: flex;
+                justify-content: flex-end;
+                gap: 8px;
+
+                .slider-btn {
+                    height: 38px;
+                    width: 38px;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                }
+
+                .slider-next {
+                    background-color: $primary_color;
+                    color: #fff;
+                    transition: .2s;
+                }
+
+                .slider-next:hover {
+                    background-color: #1546a1;
+
+                }
+
+                .slider-prev {
+                    background-color: #ced4e4;
+                    color: $third_color;
+                }
+            }
+        }
+
+        .slider-content {
+            position: relative;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+
+            .mySwiper {
+                position: absolute;
+                flex-grow: 1;
+                width: 100%;
+                right: 0;
+                overflow: visible;
+
+                .swiper-slide {
+                    width: auto;
+                }
+            }
+        }
+
+    }
+}

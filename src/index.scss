@@ -1,0 +1,13 @@
+$bg_color: #dbebff;
+
+body {
+    margin: 0;
+    direction: rtl;
+    font-family: sans-serif;
+    background-color: $bg_color;
+}
+.container {
+    max-width: 1280px;
+    padding: 0 20px;
+    margin: auto;
+}

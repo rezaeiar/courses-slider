@@ -1,0 +1,97 @@
+$primary_color: #1e57c2;
+$secondry_color: #969696;
+$third_color: #272727;
+$bg_color: #dbebff;
+
+.course-box {
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+
+    .course-box__img {
+        height: 200px;
+        width: 200px;
+        border-radius: 8px;
+        background: linear-gradient(0deg, rgb(89, 0, 255) 0%, rgba(98, 0, 255, 0.5) 100%, rgba(98, 0, 255, 1) 100%);
+    }
+
+    .course-box__content {
+        padding-top: 10px;
+
+        h4 {
+            color: $third_color;
+            font-weight: 600;
+            font-size: 20px;
+            margin: 0 0 10px 0;
+        }
+
+        .course-box__detail {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            .course-box__stars {
+                display: flex;
+                gap: 2px;
+
+                i {
+                    color: rgba(255, 230, 0, 0.329);
+                }
+
+                i.fill {
+                    color: rgb(255, 238, 0);
+                }
+            }
+        }
+
+        .course-box__price {
+            text-align: left;
+            font-size: 12px;
+            color: $third_color;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .course-box__buttons {
+            display: flex;
+            gap: 10px;
+
+            .course-box__register {
+                display: flex;
+                flex-grow: 1;
+                align-items: center;
+                justify-content: center;
+                background-color: $primary_color;
+                border-radius: 8px;
+                color: #fff;
+                transition: .2s;
+                cursor: pointer;
+            }
+
+            .course-box__register:hover {
+                background-color: #1546a1;
+            }
+
+            .course-box__btn {
+                height: 40px;
+                width: 40px;
+                background-color: #dee2eb;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                cursor: pointer;
+                transition: .2s;
+                border: 1px solid transparent;
+
+                i {
+                    color: $primary_color;
+                }
+            }
+            .course-box__btn:hover {
+                border: 1px solid #969696;
+            }
+        }
+    }
+}
